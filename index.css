@@ -12,6 +12,15 @@ body {
     height: 50px;
 }
 
+.slider-nav {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 1.7rem;
+    opacity: 0.8;
+    display: none;
+}
+
 .profile {
     height: 30px;
     opacity: 0.7;
@@ -48,7 +57,6 @@ body {
 }
 
 .report {
-    margin: 50px;
     font-size: 2rem;
 }
 
@@ -66,4 +74,30 @@ body {
     top: 70px;
     text-align: center;
     line-height: 2rem;
+}
+
+@media (500px<width<1000px) {
+    .fa-duotone,.unimlb {
+        position: absolute;
+        top: 0;
+    }
+    .unimlb {
+        padding-left: 20px;
+    }
+
+}
+
+@media (width<=500px) {
+    .nav-bar {
+        justify-content: center;
+    }
+    .report {
+        font-size: 1.6rem;
+    }
+    .nav-list {
+        display: none;
+    }    
+    .slider-nav {
+        display: block;
+    }
 }
